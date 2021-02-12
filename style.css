@@ -1,0 +1,162 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*fim do reset*/
+
+*{
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+
+header{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10vw 1fr;
+    grid-template-areas: ". Menu-nav Menu-nav Menu-nav"
+                        "Meu-nome Meu-nome Foto-header Foto-header" ;
+    background-color: black;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.Menu-nav{
+    display: flex;
+    grid-area: Menu-nav;
+    align-items: center;
+    justify-content: center;
+}
+
+.Meu-nome{
+    grid-area: Meu-nome;
+    color: white;
+    font-size: 4.5vw;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    line-height: 5vw;
+    padding-left: 5vw;
+    padding-top: 6vw;
+}
+
+.Meu-nome p:nth-child(2){
+    font-size: 3vw;
+}
+.Foto-header{
+    grid-area: Foto-header;
+    padding-right: 7vw;
+    padding-bottom: 4vw;
+}
+
+header nav{
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-size: 2vw;
+    font-family: 'Rubik', sans-serif;
+    
+}
+header nav a{
+    padding: 0vw 1.7vw 0vw 1.7vw;
+    text-decoration: none;
+    color: white;
+}
+
+header nav a:hover{
+    text-decoration: yellow overline;
+    line-height: 20px;
+    padding-top: 2vw;
+    font-size: 2.5vw;    
+}
+
+.Foto-header img{
+    width: 24vw;
+    border-radius: 50%;
+    
+}
+
+.Logo1{
+    display: flex;
+    position: absolute;
+    top: 3.5vw;
+    left: 9vw;
+    width: 15vw;
+    height: 15vw;
+}
+
+.Linked-in{
+    display: flex;
+    position: absolute;
+    top: 10vw;
+    right: 7vw;
+    width: 6vw;
+    height: 6vw;
+}
+
+.Linked-in>img:hover, .Git-hub>img:hover, .Stack-overflow>img:hover{
+    border-right: 6px solid yellow;
+    padding-right: 20px;
+}
+
+.Linked-in:hover, .Git-hub:hover, .Stack-overflow:hover{
+    width: 7vw;
+    height: 7vw;
+}
+
+.Git-hub{
+    display: flex;
+    position: absolute;
+    top: 19vw;
+    right: 5vw;
+    width: 6vw;
+    height: 6vw;    
+}
+
+.Stack-overflow{
+    display: flex;
+    position: absolute;
+    top: 28vw;
+    right: 7vw;
+    width: 6vw;
+    height: 6vw;    
+}
