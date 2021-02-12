@@ -95,7 +95,7 @@ header{
 header nav{
     display: inline-flex;
     flex-wrap: wrap;
-    font-size: 2vw;
+    font-size: 2.2vw;
     font-family: 'Rubik', sans-serif;
     
 }
@@ -263,7 +263,7 @@ header nav a:hover{
     color: #999999;
     display: flex;
     flex-direction: column;
-    padding: 5vw 0vw 0vw 4vw;
+    padding: 5vw 0vw 4vw 0vw;
     align-content: center;
     justify-content: center;
     justify-items: center;
@@ -524,4 +524,507 @@ footer div:first-child{
 footer div img{
     width: 5vw;
     height: 5vw;
+}
+
+
+@media (max-width: 412px){
+    
+    header{
+        display: grid;
+        width: 100vw;
+        height: 57vw;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 10vw 1fr;
+        grid-template-areas: "Menu-nav Menu-nav Menu-nav Menu-nav"
+                            "Meu-nome Meu-nome Foto-header Foto-header" ;
+        background-color: black;
+        align-items: center;
+        justify-items: center;
+    
+    }
+    
+    .Menu-nav{
+        display: flex;
+        grid-area: Menu-nav;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .Meu-nome{
+        grid-area: Meu-nome;
+        color: white;
+        font-size: 4.5vw;
+        font-family: 'Rubik', sans-serif;
+        text-align: center;
+        line-height: 5vw;
+        padding-left: 5vw;
+        padding-top: 18vw;
+    }
+    
+    .Meu-nome p:nth-child(2){
+        font-size: 3.4vw;
+        padding-top: 1vw;
+    }
+    .Foto-header{
+        grid-area: Foto-header;
+        padding-right: 7vw;
+        padding-bottom: 6vw;
+        padding-top: 4vw;
+    }
+    
+    header nav{
+        display: inline-flex;
+        flex-wrap: wrap;
+        font-size: 3vw;
+        font-family: 'Rubik', sans-serif;
+        
+    }
+    header nav a{
+        padding: 0vw 1.7vw 0vw 1.7vw;
+        text-decoration: none;
+        color: white;
+    }
+    
+    header nav a:hover{
+        text-decoration: yellow overline;
+        line-height: 40px;
+        padding-top: 2vw;
+        font-size: 3.5vw;    
+    }
+    
+    .Foto-header img{
+        width: 35vw;
+        border-radius: 50%;
+        
+    }
+    
+    .Logo1{
+        display: flex;
+        position: absolute;
+        top: 12vw;
+        left: 18vw;
+        width: 21vw;
+        height: 21vw;
+    }
+    
+    
+    
+    .Linked-in>img:hover, .Git-hub>img:hover, .Stack-overflow>img:hover{
+        border-right: none;
+        padding-right: none;
+    }
+    
+    .Linked-in:hover, .Git-hub:hover, .Stack-overflow:hover{
+        width: 10vw;
+        height: 10vw;
+    }
+    
+    .Linked-in{
+        display: flex;
+        position: absolute;
+        top: 10vw;
+        right: 6vw;
+        width: 12vw;
+        height: 12vw;
+    }
+    
+    .Git-hub{
+        display: flex;
+        position: absolute;
+        top: 26vw;
+        right: 1vw;
+        width: 12vw;
+        height: 12vw;    
+    }
+    
+    .Stack-overflow{
+        display: flex;
+        position: absolute;
+        top: 42vw;
+        right: 6vw;
+        width: 12vw;
+        height: 12vw;    
+    }
+
+
+
+
+    #Bio{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 5vw 3vw 4vw 3vw;
+        align-items: center;
+        justify-items: center;
+        
+    }
+    
+    .Imagem-Bio img{
+        width: 80vw;
+        align-self: center;
+        justify-self: center;    
+    }
+    .Texto-Bio p:first-child{
+        font-size: 7vw;
+        font-weight: bold;
+        padding-bottom: 3vw;
+    }
+    .Texto-Bio{
+        flex-direction: column;
+        font-size: 3.5vw;
+        padding: 3vw;
+    }
+    
+    .Texto-Bio p{
+        padding: 0vw 0vw 3vw 0vw;
+        font-family: 'Heebo', sans-serif;
+    }
+    
+    .Texto-Bio p img{
+        height: 3vw;
+    }
+
+
+    #Formação{
+        display: flex;
+        flex-direction: column;
+        background-color: #DEDEDE;
+        color: #434343;
+        padding: 5vw 0vw 0vw 4vw;
+        align-content: center;
+        align-items: center;
+        
+    }
+    
+    #Formação h2{
+        font-size: 6vw;
+        font-weight: bold;
+        padding-bottom: 4vw;
+    }
+    
+    #Formação div{
+        display:flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        padding: 0px 0px 6vw 0px;
+        
+    }
+    
+    #Formação div div{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-self: flex-start;
+        padding: 0px;   
+    }
+    
+    .Texto-Formação{
+        font-size: 3vw;
+        text-align: left;
+        padding: 0px;
+        justify-content: left;
+        justify-items: left;
+        line-height: 4vw;
+    }
+    .Texto-Formação p:nth-child(2){
+        font-weight: bold;
+    }
+    
+    .Logo-universidade1{
+        width: 12vw;
+        position: relative;
+        left: -5vw;
+    }
+    
+    .Logo-universidade2{
+        width: 16vw;
+        position: relative;
+        left: -14vw;
+    }
+
+
+    #Experiência{
+        background-color: #434343;
+        color: #999999;
+        display: flex;
+        flex-direction: column;
+        padding: 5vw 0vw 5vw 0vw;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    #Experiência h2{
+        font-size: 6vw;
+        font-weight: bold;
+        padding-bottom: 4vw;
+    }
+    
+    .Logo-Aquario, .Logo-PUC{
+        border-radius: 50%;
+        width: 12vw;
+        height: 12vw;
+    }
+    
+    .Logo-DCT{
+        width: 12vw;
+        height: 12vw;
+    }
+    
+    #Experiência div div{
+        display: flex;
+        flex-direction: row;
+        padding-left: 3vw;
+    }
+    
+    #Experiência div div div{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 4vw;
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+    
+    .Texto-Experiência p:first-of-type{
+        font-size: 2.6vw;
+    }
+    
+    .Texto-Experiência p:nth-child(2){
+        font-weight: bold;
+    }
+    
+    .Texto-Experiência p:nth-child(3){
+        font-size: 2.8vw;
+    }
+
+
+    #Projetos{
+        background-color: #DEDEDE;
+        color: #434343;
+        display: flex;
+        flex-direction: column;
+        padding: 4vw 4vw 4vw 4vw;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    #Projetos h2{
+        font-size: 6vw;
+        line-height: 7vw;
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 4vw;   
+    }
+    
+    #Projetos div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: 90%;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        
+    }
+    
+    #Projetos div div{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h3{
+        font-size: 6vw;
+        font-weight: bold;
+        text-align: center;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 4vw;
+    }
+    
+    h4{
+        font-size: 4vw;
+        text-align: center;
+        padding-top: 6vw;
+    }
+    
+    .Cartão-Projeto{
+        padding-top: 2vw;
+        padding-bottom: 8vw;
+        margin-bottom: 4vw;
+        align-self: flex-start;
+        background-color: white;
+        border-radius: 4vw;
+    }
+    .Cartão-Projeto h4{
+        padding-top: 1vw;
+    }
+    .Cartão-Projeto img{
+        padding-top: 3vw;
+        width: 50vw;
+    }
+    .Cartão-Projeto video{
+        padding-top: 6vw;
+        width: 70vw;
+    }
+    
+    .Cartão-Projeto p{
+        padding-top: 6vw;
+        padding-bottom: 8vw;
+        width: 60vw;
+        font-size: 4vw;
+    }
+    .Cartão-Projeto p:nth-child(2){
+        padding: 0vw;
+    }
+    .Cartão-Projeto nav a{
+        padding: 1.3vw;
+        margin-right: 1vw;
+        background-color:#585858;
+        color: white;
+        border-radius: 1vw;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 3.6vw;
+        
+    }
+
+
+    #Fala-comigo{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        padding: 4vw 8vw 4vw 10vw;
+    }
+
+
+    .Contato1{
+        padding: 0vw;
+        margin-left: 6vw;
+    }
+    
+    .Contato1 h2{
+        display:flex;
+        font-size:8vw;
+        font-weight: bold;
+        padding-top: 5vw;
+    }
+    
+    .Contato1 p{
+        font-size: 5vw;
+        width: 80vw;
+        padding: 6vw 0vw 0vw 0vw;
+        margin: 0vw;
+    }
+    
+    .Contato1 nav{
+        padding: 2vw 0vw 2vw 1vw;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .Contato1 nav a{
+        padding: 0vw 1vw 0vw 1vw;
+       
+    }
+    .Contato1 nav a img{
+        width: 18vw;
+        height: 18vw;
+        margin-left: 3vw;
+        margin-top: 5vw;
+    }
+
+    .Contato1 nav a img:hover{
+        width: 16vw;
+        height: 16vw;
+        margin-left: 3vw;
+        margin-top: 5vw;
+    }
+    
+    .Contato1 div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        padding-top: 6vw;
+        padding-bottom: 2.5vw;
+        
+        
+    }
+    .Contato1 div img{
+        width: 10vw;
+        height: 10vw;
+        
+    }
+    
+    .Contato1 nav a:hover{
+        height: 6vw;
+        width: 6vw;
+        background-color: white;
+        border-radius: 3vw;
+    
+    }
+    .Contato1 div p{
+        padding: 0vw 0vw 0vw 1.5vw;
+        font-size: 5vw;
+        
+    }
+    .Contato1 div a{
+        
+        padding: 0vw 0vw 0vw 1.5vw;
+        font-size: 5vw;
+    }
+    
+    .Contato2{
+        
+        padding: 5vw 0vw 4vw 0vw;
+        font-size: 5vw;
+        width: 80vw;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label{
+        padding-bottom: 2vw;
+    }
+    
+    
+    button{ 
+        width: 60vw;
+        justify-self: center;
+    }
+
+    
+
+    footer{
+        display: flex;
+        display: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        height: 15vw;
+        font-size: 2.8vw;
+    }
+    
+    footer div:first-child{
+        padding-right: 4vw;
+    }
+    
+    footer div img{
+        width: 10vw;
+        height: 10vw;
+    }
+
 }
