@@ -189,7 +189,7 @@ header nav a:hover{
 }
 
 .Texto-Bio p{
-    padding: 0px 0px 20px 30px;
+    padding: 0px 0px 20px 1vw;
     font-family: 'Heebo', sans-serif;
 }
 
@@ -324,7 +324,7 @@ header nav a:hover{
     color: #434343;
     display: flex;
     flex-direction: column;
-    padding: 4vw 4vw 4vw 4vw;
+    padding: 0vw 4vw 2vw 4vw;
     align-content: center;
     justify-content: center;
     justify-items: center;
@@ -335,7 +335,9 @@ header nav a:hover{
     font-size: 4vw;
     font-weight: bold;
     padding-bottom: 4vw;   
+    padding-top: 4vw;
 }
+
 
 #Projetos div{
     display: flex;
@@ -406,7 +408,49 @@ h4{
     text-decoration: none;
     font-weight: bold;
     font-size: 1vw;
+}
+    /*Cartões para Projetos antigos*/
+
+    .Cartão-Projeto2{
+        flex-basis: 33vw;
+        padding-top: 2vw;
+        padding-bottom: 4vw;
+        margin-bottom: 4vw;
+        align-self: flex-start;
+        background-color: white;
+        border-radius: 4vw;
+    }
+    .Cartão-Projeto2 h4{
+        padding-top: 0.5vw;
+    }
+    .Cartão-Projeto2 img{
+        padding-top: 1vw;
+        width: 20vw;
+    }
+    .Cartão-Projeto2 video{
+        padding-top: 1vw;
+        width: 20vw;
+    }
     
+    .Cartão-Projeto2 p{
+        padding-top: 2vw;
+        padding-bottom: 0vw;
+        width: 20vw;
+        font-size: 1.4vw;
+    }
+    
+    .Cartão-Projeto2 nav{
+        padding-top: 3vw;
+    }
+    .Cartão-Projeto2 nav a{
+        padding: 0.8vw;
+        margin-right: 1vw;
+        background-color:#585858;
+        color: white;
+        border-radius: 1vw;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1vw;
 }
 
 #Fala-comigo{
@@ -837,7 +881,7 @@ footer div img{
     }
     
     h3{
-        font-size: 6vw;
+        font-size: 5vw;
         font-weight: bold;
         text-align: center;
         padding-left: 3vw;
@@ -888,10 +932,51 @@ footer div img{
         border-radius: 1vw;
         text-decoration: none;
         font-weight: bold;
+        font-size: 3.6vw;    
+    }
+
+    /*Cartões Projetos Antigos*/
+
+    .Cartão-Projeto2{
+        padding-top: 2vw;
+        padding-bottom: 8vw;
+        margin-bottom: 4vw;
+        align-self: flex-start;
+        background-color: white;
+        border-radius: 4vw;
+    }
+    .Cartão-Projeto2 h4{
+        padding-top: 1vw;
+    }
+    .Cartão-Projeto2 img{
+        padding-top: 3vw;
+        width: 50vw;
+    }
+    .Cartão-Projeto2 video{
+        padding-top: 6vw;
+        width: 70vw;
+    }
+    
+    .Cartão-Projeto2 p{
+        padding-top: 5vw;
+        padding-bottom: 1vw;
+        width: 60vw;
+        font-size: 4vw;
+    }
+    .Cartão-Projeto2 p:last-of-type{
+        padding-bottom: 4vw;
+    }
+    .Cartão-Projeto2 nav a{
+        padding: 1.3vw;
+        margin-right: 1vw;
+        background-color:#585858;
+        color: white;
+        border-radius: 1vw;
+        text-decoration: none;
+        font-weight: bold;
         font-size: 3.6vw;
         
     }
-
 
     #Fala-comigo{
         display: flex;
