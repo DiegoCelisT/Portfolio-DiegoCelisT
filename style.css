@@ -48,6 +48,9 @@ table {
     box-sizing: border-box;
 }
 
+main{
+    font-family: 'Heebo', sans-serif;
+}
 
 header{
     display: grid;
@@ -159,4 +162,366 @@ header nav a:hover{
     right: 7vw;
     width: 6vw;
     height: 6vw;    
+}
+
+#Bio{
+    display: flex;
+    flex-direction: row;
+    padding: 5vw 3vw 5vw 3vw;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.Imagem-Bio img{
+    width: 50vw;
+    align-self: center;
+    justify-self: center;    
+}
+.Texto-Bio p:first-child{
+    font-size: 7vw;
+    font-weight: bold;
+}
+.Texto-Bio{
+    flex-direction: column;
+    font-size: 2.1vw;
+    padding: 3vw;
+}
+
+.Texto-Bio p{
+    padding: 0px 0px 20px 30px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.Texto-Bio p img{
+    height: 1.5vw;
+}
+
+#Formação{
+    display: flex;
+    flex-direction: column;
+    background-color: #DEDEDE;
+    color: #434343;
+    padding: 5vw 0vw 0vw 4vw;
+    align-content: center;
+    align-items: center;
+    
+}
+
+#Formação h2{
+    font-size: 4vw;
+    font-weight: bold;
+    padding-bottom: 4vw;
+}
+
+#Formação div{
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    padding: 0px 0px 6vw 0px;
+    
+}
+
+#Formação div div{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-self: flex-start;
+    padding: 0px;
+    
+
+    
+}
+
+.Texto-Formação{
+    font-size: 2.2vw;
+    text-align: left;
+    padding: 0px;
+    justify-content: left;
+    justify-items: left;
+    line-height: 3vw;
+}
+.Texto-Formação p:nth-child(2){
+    font-weight: bold;
+}
+
+.Logo-universidade1{
+    width: 9vw;
+    position: relative;
+    left: -10vw;
+}
+
+.Logo-universidade2{
+    width: 12vw;
+    position: relative;
+    left: -16vw;
+}
+
+#Experiência{
+    background-color: #434343;
+    color: #999999;
+    display: flex;
+    flex-direction: column;
+    padding: 5vw 0vw 0vw 4vw;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#Experiência h2{
+    font-size: 4vw;
+    font-weight: bold;
+    padding-bottom: 4vw;
+}
+
+.Logo-Aquario{
+    border-radius: 50%;
+    width: 7vw;
+    height: 7vw;
+}
+
+.Logo-DCT{
+    width: 7vw;
+    height: 7vw;
+}
+
+.Logo-PUC{
+    border-radius: 50%;
+    width: 7vw;
+    height: 7vw;
+}
+
+#Experiência div div{
+    display: flex;
+    flex-direction: row;
+    padding-left: 3vw;
+}
+
+#Experiência div div div{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4vw;
+    font-size: 2.4vw;
+    line-height: 2.4vw;
+}
+
+.Texto-Experiência p:first-of-type{
+    font-size: 1.4vw;
+}
+
+.Texto-Experiência p:nth-child(2){
+    font-weight: bold;
+}
+
+.Texto-Experiência p:nth-child(3){
+    font-size: 1.6vw;
+}
+
+#Projetos{
+    background-color: #DEDEDE;
+    color: #434343;
+    display: flex;
+    flex-direction: column;
+    padding: 4vw 4vw 4vw 4vw;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#Projetos h2{
+    font-size: 4vw;
+    font-weight: bold;
+    padding-bottom: 4vw;   
+}
+
+#Projetos div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    align-content: center;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+#Projetos div div{
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+
+h4{
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+.Cartão-Projeto{
+    flex-basis: 33vw;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
+    margin-bottom: 4vw;
+    align-self: flex-start;
+    background-color: white;
+    border-radius: 4vw;
+}
+.Cartão-Projeto h4{
+    padding-top: 0.5vw;
+}
+.Cartão-Projeto img{
+    padding-top: 1vw;
+    width: 20vw;
+}
+.Cartão-Projeto video{
+    padding-top: 1vw;
+    width: 20vw;
+}
+
+.Cartão-Projeto p{
+    padding-top: 1.5vw;
+    padding-bottom: 2.5vw;
+    width: 20vw;
+    font-size: 1.4vw;
+}
+.Cartão-Projeto p:nth-child(2){
+    padding: 0vw;
+}
+.Cartão-Projeto nav a{
+    padding: 0.8vw;
+    margin-right: 1vw;
+    background-color:#585858;
+    color: white;
+    border-radius: 1vw;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1vw;
+    
+}
+
+#Fala-comigo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "Contato1 Contato2";
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.Contato1{
+    grid-area: Contato1;
+    padding-bottom: 2vw;
+}
+
+.Contato1 h2{
+    display:flex;
+    font-size:4vw;
+    font-weight: bold;
+    padding-top: 5vw;
+}
+
+.Contato1 p{
+    font-size: 2vw;
+    width: 30vw;
+    padding-top: 2vw;
+}
+
+.Contato1 nav{
+    padding: 2vw 0vw 2vw 1vw;
+}
+
+.Contato1 nav a{
+    padding: 0vw 1vw 0vw 1vw;
+   
+}
+.Contato1 nav a img{
+    width: 5vw;
+    height: 5vw;
+}
+
+.Contato1 div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    padding-top: 1vw;
+    padding-bottom: 2.5vw;
+    
+}
+.Contato1 div img{
+    width: 2vw;
+    height: 2vw;
+}
+
+.Contato1 nav a:hover{
+    height: 6vw;
+    width: 6vw;
+    background-color: #999999;
+    border-radius: 3vw;
+
+}
+.Contato1 div p{
+    padding: 0vw 0vw 0vw 1.5vw;
+    font-size: 2vw;
+}
+.Contato1 div a{
+    align-self: center;
+    justify-self: center;
+    padding: 0vw 0vw 0vw 1.5vw;
+    font-size: 2vw;
+}
+
+.Contato2{
+    grid-area: Contato2;
+    padding: 5vw 0vw 4vw 0vw;
+    font-size: 1.2vw;
+    width: 30vw;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    padding-bottom: 2vw;
+}
+
+
+button{ 
+    width: 10vw;
+    justify-self: center;
+}
+
+
+footer{
+    display: flex;
+    display: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 8vw;
+    font-size: 1.8vw;
+}
+
+footer div:first-child{
+    padding-right: 5vw;
+}
+
+footer div img{
+    width: 5vw;
+    height: 5vw;
 }
