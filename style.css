@@ -137,8 +137,8 @@ header nav a:hover{
 }
 
 .Linked-in>img:hover, .Git-hub>img:hover, .Stack-overflow>img:hover{
-    border-right: 6px solid yellow;
-    padding-right: 20px;
+    border-right: 1vw solid yellow;
+    padding-right: 2vw;
 }
 
 .Linked-in:hover, .Git-hub:hover, .Stack-overflow:hover{
