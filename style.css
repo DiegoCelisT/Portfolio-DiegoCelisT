@@ -528,7 +528,7 @@ h4{
 .Contato2{
     grid-area: Contato2;
     padding: 5vw 0vw 4vw 0vw;
-    font-size: 1.2vw;
+    font-size: 1.6vw;
     width: 30vw;
 }
 
@@ -541,10 +541,16 @@ label{
     padding-bottom: 2vw;
 }
 
+input, textarea{
+    font-size: 1.6vw;
+}
+
 
 button{ 
     width: 10vw;
     justify-self: center;
+    padding: 1vw 0vw 1vw 0vw;
+    font-size: 1.6vw;
 }
 
 
@@ -1086,6 +1092,12 @@ footer div img{
     button{ 
         width: 60vw;
         justify-self: center;
+        padding: 3vw 0vw 3vw 0vw;
+        font-size: 5vw;
+    }
+
+    input, textarea{
+        font-size: 5vw;
     }
 
     footer{
