@@ -1123,3 +1123,18 @@ footer div img{
     }
 
 }
+
+
+
+
+/*Novas modificações*/
+
+#Software_Engenharia img{
+    width: 8vw;
+    
+}
+
+#Software_Engenharia{
+    display:flex;
+    justify-content: space-around;
+}
