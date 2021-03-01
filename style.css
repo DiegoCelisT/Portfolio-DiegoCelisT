@@ -1129,12 +1129,24 @@ footer div img{
 
 /*Novas modificações*/
 
-#Software_Engenharia img{
-    width: 8vw;
-    
+#Software_Engenharia img, #Software_Desenvolvedor_Web img{
+    width: 9vw;
 }
 
-#Software_Engenharia{
+#Software_Engenharia, #Software_Desenvolvedor_Web{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+#Software div{
+    padding: 3vw 0vw 3vw 0vw;
+}
+
+#Software h2{
+    font-size: 3vw;
+    font-weight: bold;
+    padding-top: 3vw;
+    text-align: center;
+    color: #434343;
+    
 }
