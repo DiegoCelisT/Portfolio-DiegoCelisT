@@ -576,6 +576,33 @@ footer div img{
     height: 5vw;
 }
 
+/*Novas modificações*/
+
+#Software_Engenharia img, #Software_Desenvolvedor_Web img{
+    width: 12vw;
+    height: 12vw;
+    margin: 3vw;
+}
+
+#Software_Engenharia, #Software_Desenvolvedor_Web{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#Software div{
+    padding: 3vw 0vw 3vw 0vw;
+}
+
+#Software h2{
+    font-size: 4vw;
+    font-weight: bold;
+    padding-top: 3vw;
+    text-align: center;
+    color: #434343;
+}
+
+/*Versão Mobile:*/
 
 @media (max-width: 412px){
     
@@ -1122,31 +1149,33 @@ footer div img{
         height: 10vw;
     }
 
+    /*Novas modificações*/
+
+    #Software_Engenharia img, #Software_Desenvolvedor_Web img{
+        width: 18vw;
+        height: 18vw;
+        margin: 3vw;
+    }
+
+    #Software_Engenharia, #Software_Desenvolvedor_Web{
+        display:flex;
+        justify-content: space-evenly;
+    }
+
+    #Software div{
+        padding: 3vw 0vw 3vw 0vw;
+    }
+
+    #Software h2{
+        font-size: 5.5vw;
+        font-weight: bold;
+        padding-top: 5.5vw;
+        text-align: center;
+        color: #434343;
+    }
+
 }
 
 
 
 
-/*Novas modificações*/
-
-#Software_Engenharia img, #Software_Desenvolvedor_Web img{
-    width: 9vw;
-}
-
-#Software_Engenharia, #Software_Desenvolvedor_Web{
-    display:flex;
-    justify-content: space-evenly;
-}
-
-#Software div{
-    padding: 3vw 0vw 3vw 0vw;
-}
-
-#Software h2{
-    font-size: 3vw;
-    font-weight: bold;
-    padding-top: 3vw;
-    text-align: center;
-    color: #434343;
-    
-}
