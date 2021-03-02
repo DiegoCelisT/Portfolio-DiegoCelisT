@@ -528,7 +528,7 @@ h4{
 .Contato2{
     grid-area: Contato2;
     padding: 5vw 0vw 4vw 0vw;
-    font-size: 1.6vw;
+    font-size: 1.8vw;
     width: 30vw;
 }
 
@@ -542,15 +542,23 @@ label{
 }
 
 input, textarea{
-    font-size: 1.6vw;
+    font-size: 1.8vw;
+    width: 32vw;
+    margin-top: 0.25vw;
+}
+
+textarea{
+    resize:none;
+    height: 16vw;
 }
 
 
 button{ 
-    width: 10vw;
+    width: 32vw;
     justify-self: center;
     padding: 1vw 0vw 1vw 0vw;
-    font-size: 1.6vw;
+    font-size: 2vw;
+    font-weight: bold;
 }
 
 
@@ -600,6 +608,56 @@ footer div img{
     padding-top: 3vw;
     text-align: center;
     color: #434343;
+}
+
+/*Estilos novos para formularios*/
+
+.contact-form-response {
+    font-size: 2.2vw;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact-form {
+    --form-ok-color: #4caf50; /*Definindo subclasses*/
+    --form-error-color: #f44336;
+
+}
+
+/*Agora essas subclasses vou usar assim, para quando o campo esteja bem ou mal preenchido*/
+.contact-form [required]:valid{
+    border:thin solid var(--form-ok-color)
+}
+
+.contact-form [required]:invalid{
+    border:thin solid var(--form-error-color)
+}
+
+/*Mensagens de erro na validação*/
+.contact-form-error{
+    margin-top: -1rem;
+    font-size: 80%;
+    background-color: var(--form-error-color);
+    color: #fff;
+    transition: all 800ms ease;
+}
+.contact-form-error.is-active{
+    display: block;
+    animation: show-message 1s 1 normal 0s ease-out both;
+}
+.none{
+    display: none;
+}
+@keyframes show-message {
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100%{
+        visibility: visible;
+        opacity: 100%;
+    }
 }
 
 /*Versão Mobile:*/
@@ -1079,6 +1137,7 @@ footer div img{
     .Contato1 div img{
         width: 10vw;
         height: 10vw;
+        margin-left: 2vw;
         
     }
     
@@ -1104,7 +1163,7 @@ footer div img{
         
         padding: 5vw 0vw 4vw 0vw;
         font-size: 5vw;
-        width: 80vw;
+        width: 76vw;
     }
     
     form{
@@ -1118,7 +1177,7 @@ footer div img{
     
     
     button{ 
-        width: 60vw;
+        width: 75vw;
         justify-self: center;
         padding: 3vw 0vw 3vw 0vw;
         font-size: 5vw;
@@ -1126,6 +1185,12 @@ footer div img{
 
     input, textarea{
         font-size: 5vw;
+        width: 75vw;
+    }
+    
+    textarea{
+        resize:none;
+        height: 75vw;
     }
 
     footer{

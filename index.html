@@ -310,25 +310,35 @@
                 </div>
             </section>
             <section class="Contato2">
-            <form action="" method="POST">
+            <form class="contact-form" method="POST">
                 <label>
                     <p>Nome</p>
-                    <input type="text" name="Nome da pessoa" placeholder="Seu nome e sobrenome" required>
+                    <input type="text" name="Nome da pessoa" placeholder="Escreva seu nome" title="O nome deve ser composto apenas por letras e espaços em branco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÄäËëÏïÖöÜüçÇÃãÕõÂâÊêÎîÔôÛû\s]+$"required> <!--O atributo title serve para a validação do formulario-->
+                    <!--Com pattern posso fazer a validação de caracteres só com HTML5-->
                 </label>
                 <label>
                     <p>Email</p>  
-                    <input type="text" name="Email do visitante" placeholder="nome@mail.com" required>
+                    <input type="email" name="Email do visitante" placeholder="nome@mail.com" title="Esse email não é válido, deve ter a estrutura nome@mail.com"
+                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                    <!--O input tipo email valida que exista uma @ e tenha texto antes e depois dela-->
                 </label>
                 <label>
                     <p>Assunto</p>
-                    <input type="text" name="Assunto" placeholder="Assunto" required>
+                    <input type="text" name="Assunto" placeholder="Sobre o que você quer falar?" title="O Assunto é requerido" required>
                 </label>
                 <label>
                     <p>Mensagem</p>
-                    <textarea name="mensagem de visitante" rows= "12" cols="26"  placeholder="Fala comigo, me dê a sua opinião, ou me pergunte o que quiser." required></textarea>
+                    <textarea name="comments"   placeholder="Fala comigo, me dê a sua opinião, ou me pergunte o que quiser." data-pattern="^.{1,255}$" title="A mensagem não pode exceder os 255 caracteres"required></textarea> <!--textarea não permite atributo pattern, devo criar um novo para validar com o JS-->
                 </label>
                 <button type="submit">Enviar</button>
+                <div class="contact-form-response none">
+                    <img src="Images/Gear-Personalizado.svg" alt="Carregando" width="100px">
+                </div>
+                <div class="contact-form-response none">
+                    <p>A sua mensagem foi enviada!</p>
+                </div>
             </form>
+            
             </section>
             
         </section>
@@ -345,5 +355,6 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
