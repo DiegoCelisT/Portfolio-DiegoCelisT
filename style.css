@@ -635,14 +635,19 @@ footer div img{
 
 /*Mensagens de erro na validação*/
 .contact-form-error{
-    margin-top: -1rem;
+    
     font-size: 80%;
     background-color: var(--form-error-color);
     color: #fff;
     transition: all 800ms ease;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 32vw;
+    line-height: 2.6vw;
 }
 .contact-form-error.is-active{
-    display: block;
+    display: flex;
     animation: show-message 1s 1 normal 0s ease-out both;
 }
 .none{

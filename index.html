@@ -319,7 +319,7 @@
                 <label>
                     <p>Email</p>  
                     <input type="email" name="Email do visitante" placeholder="nome@mail.com" title="Esse email não é válido, deve ter a estrutura nome@mail.com"
-                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                    pattern="^[A-Za-z0-9]+(\.[_a-z0-9]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,15})$" required>
                     <!--O input tipo email valida que exista uma @ e tenha texto antes e depois dela-->
                 </label>
                 <label>
@@ -328,7 +328,7 @@
                 </label>
                 <label>
                     <p>Mensagem</p>
-                    <textarea name="comments"   placeholder="Fala comigo, me dê a sua opinião, ou me pergunte o que quiser." data-pattern="^.{1,255}$" title="A mensagem não pode exceder os 255 caracteres"required></textarea> <!--textarea não permite atributo pattern, devo criar um novo para validar com o JS-->
+                    <textarea name="comments"   placeholder="Fala comigo, me dê a sua opinião, ou me pergunte o que quiser." data-pattern="^.{1,255}$" title="Só lembre que a mensagem não pode exceder os 255 caracteres" required></textarea> <!--textarea não permite atributo pattern, devo criar um novo para validar com o JS-->
                 </label>
                 <button type="submit">Enviar</button>
                 <div class="contact-form-response none">
@@ -356,5 +356,6 @@
     </footer>
 
     <script src="script.js"></script>
+    
 </body>
 </html>
