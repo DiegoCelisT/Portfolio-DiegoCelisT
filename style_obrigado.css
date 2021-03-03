@@ -1,0 +1,20 @@
+html{
+    font-family: 'Heebo', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    font-size: 3.2vh;
+}
+
+img, p, a {
+    padding: 10vh 3vh 0vh 3vh;
+}
+
+#Obrigado{
+    width: 40vh;
+}
+
+#Logo_DCT{
+    width: 25vh;
+}
