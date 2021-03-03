@@ -3,6 +3,7 @@ const d = document;
 //Ao recarregar a página se ativam as funcões:
 d.addEventListener("DOMContentLoaded", (e) => {
     contactFormValidations ()
+    // max300 ()
 })
 
 //Variaveis do DOM vão ficar com o prefixo $ (boas práticas de programação)
@@ -39,6 +40,12 @@ function contactFormValidations (){
                 : d.getElementById ($input.name).classList.remove ("is-active")
             }
         }
+        
     })
 
 }
+
+
+        
+           
+        

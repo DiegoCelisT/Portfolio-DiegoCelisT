@@ -328,9 +328,9 @@
                 </label>
                 <label>
                     <p>Mensagem</p>
-                    <textarea name="comments"   placeholder="Fala comigo, me dê a sua opinião, ou me pergunte o que quiser." data-pattern="^.{1,255}$" title="Só lembre que a mensagem não pode exceder os 255 caracteres" required></textarea> <!--textarea não permite atributo pattern, devo criar um novo para validar com o JS-->
+                    <textarea name="comments" placeholder="Fala comigo, me dê a sua opinião, ou me pergunte o que quiser." title='Fica com medo não, me escreve alguma coisa ;)' required></textarea> <!--textarea não permite atributo pattern, devo criar um novo para validar com o JS-->
                 </label>
-                <button type="submit">Enviar</button>
+                <button type="submit" onclick="max300()" >Enviar</button>
                 <div class="contact-form-response none">
                     <img src="Images/Gear-Personalizado.svg" alt="Carregando" width="100px">
                 </div>

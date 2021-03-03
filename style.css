@@ -1245,6 +1245,38 @@ footer div img{
         color: #434343;
     }
 
+    /*Mensagens de erro na validação*/
+.contact-form-error{
+    
+    font-size: 80%;
+    background-color: var(--form-error-color);
+    color: #fff;
+    transition: all 800ms ease;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 75vw;
+    line-height: 5vw;
+}
+.contact-form-error.is-active{
+    display: flex;
+    animation: show-message 1s 1 normal 0s ease-out both;
+}
+.none{
+    display: none;
+}
+@keyframes show-message {
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100%{
+        visibility: visible;
+        opacity: 100%;
+    }
+}
+
 }
 
 
