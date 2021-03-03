@@ -47,25 +47,25 @@ function contactFormValidations (){
 
 //Aqui estava testando os pre-loaders do formulario mas já não vou precisar, deixo como curiosidade só:        
 
-// d.addEventListener ("submit", (e) => {
-//     //e.preventDefault (); //Depois dos testes já tirei isso aqui para que agora sim se processe o formulario
-//     alert ("Muito obrigado pela mensagem! Pode continuar olhando a página se quiser")
+d.addEventListener ("submit", (e) => {
+    //e.preventDefault (); //Depois dos testes já tirei isso aqui para que agora sim se processe o formulario
+    //alert ("Muito obrigado pela mensagem! Pode continuar olhando a página se quiser")
 
-//     const $form = d.querySelector (".contact-form")
-//     const $loader = d.querySelector(".contact-form-loader"),
-//     $response = d.querySelector(".contact-form-response");
+    const $form = d.querySelector (".contact-form")
+    const $loader = d.querySelector(".contact-form-loader"),
+    $response = d.querySelector(".contact-form-response");
 
-//     $loader.classList.remove ("none")
+    $loader.classList.remove ("none")
 
-//     //vou simular um Loading de 3s XD:
+    //vou simular um Loading de 3s XD:
 
-//     setTimeout(()=>{
-//         $loader.classList.add("none");
-//         $response.classList.remove ("none");
-//         $form.reset()
+    setTimeout(()=>{
+        $loader.classList.add("none");
+        $response.classList.remove ("none");
+        $form.reset()
 
-//         setTimeout(()=>$response.classList.add ("none"),2000);
-//     }, 2000);
-// })
+        setTimeout(()=>$response.classList.add ("none"),2000);
+    }, 2000);
+})
            
         

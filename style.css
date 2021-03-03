@@ -665,6 +665,16 @@ footer div img{
     }
 }
 
+/*Preloader*/
+.contact-form-loader, .contact-form-response{
+    display: flex;
+    padding-left: 3vw;
+    justify-content: center;
+    font-size: 5vw;
+    line-height: 15vw;
+}
+
+
 /*Versão Mobile:*/
 
 @media (max-width: 412px){
