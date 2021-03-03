@@ -45,7 +45,7 @@ function contactFormValidations (){
 }
 
 
-//Aqui estava testando os pre-loaders do formulario mas já não vou precisar, deixo como curiosidade só:        
+//Aqui estou implementando os pre-loaders do formulario, tipo para quando a página demorar em enviar o formulario aparecer uma imagem que faça saber ao usuario que se está carregando:        
 
 d.addEventListener ("submit", (e) => {
     //e.preventDefault (); //Depois dos testes já tirei isso aqui para que agora sim se processe o formulario
