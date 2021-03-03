@@ -3,7 +3,6 @@ const d = document;
 //Ao recarregar a página se ativam as funcões:
 d.addEventListener("DOMContentLoaded", (e) => {
     contactFormValidations ()
-    // max300 ()
 })
 
 //Variaveis do DOM vão ficar com o prefixo $ (boas práticas de programação)
@@ -46,6 +45,27 @@ function contactFormValidations (){
 }
 
 
-        
+//Aqui vou habilitar a funcionalidade de enviar o formulario para o meu email:        
+
+d.addEventListener ("submit", (e) => {
+    //e.preventDefault (); //Depois dos testes já tirei isso aqui para que agora sim se processe o formulario
+    alert ("Enviando formulario")
+
+    const $form = d.querySelector (".contact-form")
+    const $loader = d.querySelector(".contact-form-loader"),
+    $response = d.querySelector(".contact-form-response");
+
+    $loader.classList.remove ("none")
+
+    //vou simular um Loading de 3s XD:
+
+    setTimeout(()=>{
+        $loader.classList.add("none");
+        $response.classList.remove ("none");
+        $form.reset()
+
+        setTimeout(()=>$response.classList.add ("none"),2000);
+    }, 2000);
+})
            
         
