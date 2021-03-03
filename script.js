@@ -49,7 +49,7 @@ function contactFormValidations (){
 
 d.addEventListener ("submit", (e) => {
     //e.preventDefault (); //Depois dos testes já tirei isso aqui para que agora sim se processe o formulario
-    alert ("Enviando formulario")
+    alert ("Muito obrigado pela mensagem! Pode continuar olhando a página se quiser")
 
     const $form = d.querySelector (".contact-form")
     const $loader = d.querySelector(".contact-form-loader"),
