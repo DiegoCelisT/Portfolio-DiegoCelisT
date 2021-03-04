@@ -691,15 +691,13 @@ footer div img{
     flex-wrap: wrap;
 }
 
-#Repositorios button{
+#Repositorios a{
     background-color:#DEDEDE ;
+    font-size: 2.2vw;
+    font-weight: bold;
     border-radius: 3vw;
     margin: 2vw;
-    padding: 1.5vw;
-}
-
-#Repositorios button a{
-    font-size: 2vw;
+    padding: 3vw;
     color:#585858;
     text-decoration-line: none;
 }
@@ -1337,20 +1335,18 @@ footer div img{
 }
 
 #Repositorios h2 {
-    font-size: 4vw;
+    font-size: 5vw;
     color:#DEDEDE;
     flex-wrap: wrap;
 }
 
-#Repositorios button{
+#Repositorios a{
     background-color:#DEDEDE ;
+    font-size: 5vw;
+    font-weight: bold;
     border-radius: 3vw;
     margin: 2vw;
-    padding: 1.5vw;
-}
-
-#Repositorios button a{
-    font-size: 4vw;
+    padding: 3vw;
     color:#585858;
     text-decoration-line: none;
 }

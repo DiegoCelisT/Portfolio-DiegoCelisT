@@ -53,7 +53,7 @@ fetch (Repositorios_Diego)
     //Vamos criar os elementos de um novo card:
     
     let card_el = document.createElement ("article")
-    let card_name_el = document.createElement ("h2")
+    let card_name_el = document.createElement ("h4")
     let card_body_el = document.createElement ("div")
     let card_description_el = document.createElement ("p")
     let card_nav_el =document.createElement ("nav")
@@ -80,7 +80,7 @@ fetch (Repositorios_Diego)
     card_name_el.textContent = name
     card_description_el.textContent = description
 
-    card_link_el.textContent = "VER REPOSITORIO"
+    card_link_el.textContent = "REPOSITÓRIO"
     card_link_el.href = link
     card_link_el.target = "_blank"
     card_link_el.valor="noopener"
@@ -91,7 +91,7 @@ fetch (Repositorios_Diego)
     card_demo_el.valor="noopener"
 
     if(!has_pages){
-        card_demo_el.textContent = ""
+        card_nav_el.removeChild(card_demo_el)
     }
     return card_el
     }
