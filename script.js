@@ -101,16 +101,14 @@ fetch (Repositorios_Diego)
                 Repository.Name = Alldata [i].name
                 Repository.Date = Data_em_milisegundos
                 Repository.Description = Alldata [i].description
-                Repository.Demo_url = Alldata [i].html_url
-                Repository.Link = `https://diegocelist.github.io/${Repository.Name}/`
+                Repository.Link = Alldata [i].html_url
+                Repository.Demo_url = `https://diegocelist.github.io/${Repository.Name}/`
                 
                 return Repository
             }
             Lista_de_repositorios.push (Ingressar_Repositorio ())
             
         }
-        
-       
         
        //Agora vou ordenar meu objeto com o uso da função sort (), ordenamento em relação ao parâmetro "Date"
         
@@ -124,3 +122,6 @@ fetch (Repositorios_Diego)
         //console.log (TESTE.html_url) //Link ao DEMO
     })
     
+
+//Agora que eu tenho a info que queria em um objeto só, vou passar isso para minha página
+

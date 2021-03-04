@@ -674,8 +674,46 @@ footer div img{
     line-height: 15vw;
 }
 
+/*Seção para o link dos outros repositorios*/
+#Repositorios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #585858;
+    padding: 2.6vw;
+}
 
-/*Versão Mobile:*/
+#Repositorios h2 {
+    font-size: 2vw;
+    color:#DEDEDE;
+    flex-wrap: wrap;
+}
+
+#Repositorios button{
+    background-color:#DEDEDE ;
+    border-radius: 3vw;
+    margin: 2vw;
+    padding: 1.5vw;
+}
+
+#Repositorios button a{
+    font-size: 2vw;
+    color:#585858;
+    text-decoration-line: none;
+}
+
+#Repositorios img {
+    width: 12vw;
+}
+
+#Seta_Mobile{
+    display: none;
+}
+
+
+/*VERSÃO MOBILE:*/
 
 @media (max-width: 412px){
     
@@ -1287,6 +1325,48 @@ footer div img{
     }
 }
 
+/*Seção para o link dos outros repositorios*/
+#Repositorios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #585858;
+    padding: 2.6vw;
+}
+
+#Repositorios h2 {
+    font-size: 4vw;
+    color:#DEDEDE;
+    flex-wrap: wrap;
+}
+
+#Repositorios button{
+    background-color:#DEDEDE ;
+    border-radius: 3vw;
+    margin: 2vw;
+    padding: 1.5vw;
+}
+
+#Repositorios button a{
+    font-size: 4vw;
+    color:#585858;
+    text-decoration-line: none;
+}
+
+#Repositorios img {
+    width: 18vw;
+}
+
+
+#Seta_Desktop{
+    display: none;
+}
+
+#Seta_Mobile {
+    display: flex;
+}
 }
 
 
