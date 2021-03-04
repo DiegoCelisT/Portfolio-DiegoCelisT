@@ -68,4 +68,59 @@ d.addEventListener ("submit", (e) => {
     }, 2000);
 })
            
+
+//REPOSITORIOS GitHub
+
+Repositorios_Diego = "https://api.github.com/users/DiegoCelisT/repos"
+let Alldata
+let TESTE
+fetch (Repositorios_Diego)
+    .then (resposta => resposta.json())
+    .then (data =>{
         
+        Alldata = data; //Aqui vou guardar toda a info
+
+        let Lista_de_repositorios = [] //Lista de repositorios por data
+
+        for (let i=0; i<Alldata.length; i++){
+            
+            function Ingressar_Repositorio () {
+                
+                //Eu quero modificar a lista dos repositorios, pois ela por default vêm em orden alfabetico e eu quero por ordem do mais recente ao mais velho, vou resolver esse desafio assim:    
+                let Repository = {}
+                Repository_Date = Alldata [i].created_at
+                
+                Ano = Number(Repository_Date.substring(0,4)) // Com isso vou pegar só um pedacinho da string
+                Mes = Number(Repository_Date.substring (5,7))-1 // Os meses vão de zero a 11, zero=janeiro, por isso teve que substrair 1
+                Dia = Number(Repository_Date.substring (8,10))
+                Formatted_Date = new Date(Ano, Mes, Dia) // Correta representação de uma Data em JS
+                
+                //Vou usar Date.parse(), seguindo a documentação, isso transforma uma string que representa uma data e retorna o número de milissegundos desde 1º de janeiro de 1970, hora local 00:00:00. Dessa maneira vou puder ordenar depois 
+                Data_em_milisegundos = Date.parse (Formatted_Date)  
+                
+                Repository.Name = Alldata [i].name
+                Repository.Date = Data_em_milisegundos
+                Repository.Description = Alldata [i].description
+                Repository.Demo_url = Alldata [i].html_url
+                Repository.Link = `https://diegocelist.github.io/${Repository.Name}/`
+                
+                return Repository
+            }
+            Lista_de_repositorios.push (Ingressar_Repositorio ())
+            
+        }
+        
+       
+        
+       //Agora vou ordenar meu objeto com o uso da função sort (), ordenamento em relação ao parâmetro "Date"
+        
+        Lista_Ordenada= Lista_de_repositorios.sort(((a, b) => a.Date - b.Date))
+        console.table (Lista_Ordenada)
+
+        //TESTE = Alldata [20]
+        //console.log (TESTE.name) //Nome do repositorio
+        //console.log (TESTE.svn_url) //Link direto ao repositorio
+        //console.log (TESTE.description) //Descrição no Readme
+        //console.log (TESTE.html_url) //Link ao DEMO
+    })
+    
