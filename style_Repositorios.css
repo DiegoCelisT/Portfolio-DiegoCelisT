@@ -84,10 +84,6 @@ h3{
 	color: #434343;
 }
 
-
-
-
-
 section{
 	
 	display: flex;
@@ -142,11 +138,11 @@ aside a{
 	background-color: rgb(74, 0, 170);
 	display: flex;
 	position:fixed;
-    bottom: 0vw;
-    right: 0vw;
+    bottom: 0px;
+    right: 0px;
 	text-align: center;
-	width: 65px;
-	font-size: 16px;
+	width: 85px;
+	font-size: 24px;
 	margin: 15px;
 	
 }
@@ -163,11 +159,13 @@ footer{
 	text-align: center;
 }
 
-footer div:first-child{
-    padding-right: 20px;
-}
+
 
 footer div img{
-    width: 100px;
-	padding-right: 50px;
+    width: 120px;
+	padding-right: 4vw;
+}
+
+footer div p {
+	padding: 0px;
 }
