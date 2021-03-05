@@ -349,11 +349,13 @@ header nav a:hover{
     justify-items: center;
     align-items: center;
     
+    
 }
 
 #Projetos div div{
     display: flex;
     flex-direction: column;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2);
 }
 
 h3{
