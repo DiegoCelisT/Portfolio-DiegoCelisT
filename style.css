@@ -357,7 +357,7 @@ header nav a:hover{
 }
 
 h3{
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     font-weight: bold;
     text-align: center;
     padding-left: 1.5vw;
@@ -378,9 +378,7 @@ h4{
     background-color: white;
     border-radius: 4vw;
 }
-.Cartão-Projeto h4{
-    padding-top: 0.5vw;
-}
+
 .Cartão-Projeto img{
     padding-top: 1vw;
     width: 20vw;
@@ -420,9 +418,7 @@ h4{
         background-color: white;
         border-radius: 4vw;
     }
-    .Cartão-Projeto2 h4{
-        padding-top: 0.5vw;
-    }
+    
     .Cartão-Projeto2 img{
         padding-top: 1vw;
         width: 20vw;
@@ -710,6 +706,11 @@ footer div img{
     display: none;
 }
 
+#Descrição_projetos{
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 1.6vw;
+}
 
 /*VERSÃO MOBILE:*/
 
@@ -1331,7 +1332,7 @@ footer div img{
     align-items: center;
     text-align: center;
     background-color: #585858;
-    padding: 2.6vw;
+    padding: 7vw;
 }
 
 #Repositorios h2 {
@@ -1363,6 +1364,13 @@ footer div img{
 #Seta_Mobile {
     display: flex;
 }
+
+#Descrição_projetos{
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 4vw;
+}
+
 }
 
 
