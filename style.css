@@ -714,6 +714,16 @@ footer div img{
     font-size: 1.6vw;
 }
 
+.botão_submit:hover, .botões_links a:hover{
+    background-color: rgb(73, 15, 146);
+    color: white;
+}
+
+#Repositorios a:hover{
+    background-color: rgb(255, 0, 90);
+    color:white;
+}
+
 /*VERSÃO MOBILE:*/
 
 @media (max-width: 412px){
@@ -1374,7 +1384,4 @@ footer div img{
 }
 
 }
-
-
-
 

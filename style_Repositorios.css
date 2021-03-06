@@ -139,7 +139,7 @@ a {
 
 
 aside a{
-	background-color: rgb(74, 0, 170);
+	background-color: rgb(255, 0, 90);
 	display: flex;
 	position:fixed;
     bottom: 0px;
@@ -174,4 +174,8 @@ footer div img{
 
 footer div p {
 	padding: 0px;
+}
+
+a:hover{
+    background-color: rgb(73, 15, 146);
 }
