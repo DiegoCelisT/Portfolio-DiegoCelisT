@@ -54,7 +54,8 @@ main{
 
 header{
     display: grid;
-    width: 100vw;
+    /* width: 100vw; Gera um erro nos navegadores, criando uma barra de rolagem horizontal, se soluciona com max-width: 100%;*/
+    max-width: 100%;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 10vw 1fr;
     grid-template-areas: ". Menu-nav Menu-nav Menu-nav"
