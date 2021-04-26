@@ -725,10 +725,30 @@ footer div img{
     color:white;
 }
 
+.HomeBotton img{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+    width: 6vw;
+    height: 6vw;
+}
+
+.HomeBotton img:hover{  
+        bottom: 18px;
+}
+
+
+
+
 /*VERSÃO MOBILE:*/
 
-@media (max-width: 412px){
-    
+@media (max-width: 750px){
+    .HomeBotton img{
+        width: 12vw;
+        height: 12vw;
+    }
+
     header{
         display: grid;
         width: 100vw;
@@ -1385,4 +1405,3 @@ footer div img{
 }
 
 }
-
