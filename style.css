@@ -424,7 +424,7 @@ h4{
     
     .Cartão-Projeto2 img{
         padding-top: 1vw;
-        width: 20vw;
+        width: 22vw;
     }
     .Cartão-Projeto2 video{
         padding-top: 1vw;
@@ -434,8 +434,8 @@ h4{
     .Cartão-Projeto2 p{
         padding-top: 2vw;
         padding-bottom: 0vw;
-        width: 20vw;
-        font-size: 1.4vw;
+        width: 22vw;
+        font-size: 1.5vw;
     }
     
     .Cartão-Projeto2 nav{
@@ -449,7 +449,7 @@ h4{
         border-radius: 1vw;
         text-decoration: none;
         font-weight: bold;
-        font-size: 1vw;
+        font-size: 1.4vw;
 }
 
 #Fala-comigo{
@@ -743,7 +743,7 @@ footer div img{
 
 /*VERSÃO MOBILE:*/
 
-@media (max-width: 750px){
+@media (max-width: 850px){
     .HomeBotton img{
         width: 12vw;
         height: 12vw;
